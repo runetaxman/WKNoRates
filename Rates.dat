@@ -1,210 +1,238 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <Rates>
+  <!-- Skjermingsrente for ekstra skatt på lån, RF-1070 og avstemmingsskjema -->
   <RateGroup Name="Skjermingsrente" Periodic="True">
-    <!-- Skjermingsrente for ekstra skatt på lån, RF-1070 og avstemmingsskjema -->
-    <Rate Year="0000" Period="1">1.3</Rate>
-    <Rate Year="2010" Period="3">1.6</Rate>
-    <Rate Year="2012" Period="1">1.1</Rate>
-    <Rate Year="2014" Period="4">0.8</Rate>
-    <Rate Year="2015" Period="6">0.5</Rate>
-    <Rate Year="2018" Period="3">0.8</Rate>
-	<Rate Year="2019" Period="2">1.1</Rate>
-    <Rate Year="2019" Period="5">1.4</Rate>
-	<Rate Year="2020" Period="3">0.4</Rate>
+    <Rate Period="1" Year="0">1.3</Rate>
+    <Rate Period="3" Year="2010">1.6</Rate>
+    <Rate Period="1" Year="2012">1.1</Rate>
+    <Rate Period="4" Year="2014">0.8</Rate>
+    <Rate Period="6" Year="2015">0.5</Rate>
+    <Rate Period="3" Year="2018">0.8</Rate>
+    <Rate Period="2" Year="2019">1.1</Rate>
+    <Rate Period="5" Year="2019">1.4</Rate>
+    <Rate Period="3" Year="2020">0.4</Rate>
   </RateGroup>
-  <RateGroup Name="SkjermingsRenteEPF">
-    <!-- SkjermingsRenteEPF brukes i Skatt, kunngjøres i starten av Januar -->
-    <Rate Year="2014">1.2</Rate>
-    <Rate Year="2015">0.8</Rate>
-    <Rate Year="2016">0.5</Rate>
-    <Rate Year="2017">0.9</Rate>
-    <Rate Year="2018">1.1</Rate>
-	<Rate Year="2019">1.7</Rate>
-	<Rate Year="2020">0.8</Rate>
+  <!-- SkjermingsRenteEPF brukes i Skatt, kunngjøres i starten av Januar -->
+  <RateGroup Name="SkjermingsRenteEPF" Periodic="False">
+    <Rate Period="0" Year="2014">1.2</Rate>
+    <Rate Period="0" Year="2015">0.8</Rate>
+    <Rate Period="0" Year="2016">0.5</Rate>
+    <Rate Period="0" Year="2017">0.9</Rate>
+    <Rate Period="0" Year="2018">1.1</Rate>
+    <Rate Period="0" Year="2019">1.7</Rate>
+    <Rate Period="0" Year="2020">0.8</Rate>
   </RateGroup>
-  <RateGroup Name="SkjermingsRenteSkatt">
-    <!-- SkjermingsRenteSkatt brukes i Skatt, kunngjøres i starten av Januar -->
-    <Rate Year="2014">0.9</Rate>
-    <Rate Year="2015">0.6</Rate>
-    <Rate Year="2016">0.4</Rate>
-    <Rate Year="2017">0.7</Rate>
-    <Rate Year="2018">0.8</Rate>
-	<Rate Year="2019">1.3</Rate>
-	<Rate Year="2020">0.6</Rate>
+  <!-- SkjermingsRenteSkatt brukes i Skatt, kunngjøres i starten av Januar -->
+  <RateGroup Name="SkjermingsRenteSkatt" Periodic="False">
+    <Rate Period="0" Year="2014">0.9</Rate>
+    <Rate Period="0" Year="2015">0.6</Rate>
+    <Rate Period="0" Year="2016">0.4</Rate>
+    <Rate Period="0" Year="2017">0.7</Rate>
+    <Rate Period="0" Year="2018">0.8</Rate>
+    <Rate Period="0" Year="2019">1.3</Rate>
+    <Rate Period="0" Year="2020">0.6</Rate>
   </RateGroup>
-  <RateGroup Name="Merverdiavgift">
-    <!-- Brukes i Årsavslutning -->
-    <Rate Year="0000" Kind="Standard">25</Rate>
-    <Rate Year="0000" Kind="Middels">14</Rate>
-    <Rate Year="0000" Kind="Lav">8</Rate>
-    <Rate Year="2012" Kind="Middels">15</Rate>
-    <Rate Year="2016" Kind="Lav">10</Rate>
-    <Rate Year="2018" Kind="Lav">12</Rate>
+  <!-- Brukes i Årsavslutning -->
+  <RateGroup Name="Merverdiavgift" Periodic="False">
+    <Rate Kind="Standard" Period="0" Year="0">25</Rate>
+    <Rate Kind="Middels" Period="0" Year="0">14</Rate>
+    <Rate Kind="Lav" Period="0" Year="0">8</Rate>
+    <Rate Kind="Middels" Period="0" Year="2012">15</Rate>
+    <Rate Kind="Lav" Period="0" Year="2016">10</Rate>
+    <Rate Kind="Lav" Period="0" Year="2018">12</Rate>
   </RateGroup>
-  <RateGroup Name="Arbeidsgiveravgift">
-    <!-- Brukes i Årsavslutning -->
-    <Rate Year="0000" Kind="1">14.1</Rate>
-    <Rate Year="0000" Kind="1a">10.6</Rate>
-    <Rate Year="0000" Kind="2">10.6</Rate>
-    <Rate Year="0000" Kind="3">6.4</Rate>
-    <Rate Year="0000" Kind="4">5.1</Rate>
-    <Rate Year="0000" Kind="4a">7.9</Rate>
-    <Rate Year="0000" Kind="5">0</Rate>
-    <Rate Year="0000" Kind="FribeløpOrdinær">530000</Rate>
-    <Rate Year="0000" Kind="FribeløpVeitransport">265000</Rate>
-    <Rate Year="2014" Kind="FribeløpOrdinær">450000</Rate>
-    <Rate Year="2014" Kind="FribeløpVeitransport">225000</Rate>
-    <Rate Year="2015" Kind="FribeløpOrdinær">500000</Rate>
-    <Rate Year="2014" Kind="FribeløpVeitransport">250000</Rate>
+  <!-- Brukes i Årsavslutning -->
+  <RateGroup Name="Arbeidsgiveravgift" Periodic="False">
+    <Rate Kind="1" Period="0" Year="0">14.1</Rate>
+    <Rate Kind="1a" Period="0" Year="0">10.6</Rate>
+    <Rate Kind="2" Period="0" Year="0">10.6</Rate>
+    <Rate Kind="3" Period="0" Year="0">6.4</Rate>
+    <Rate Kind="4" Period="0" Year="0">5.1</Rate>
+    <Rate Kind="4a" Period="0" Year="0">7.9</Rate>
+    <Rate Kind="5" Period="0" Year="0">0</Rate>
+    <Rate Kind="FribeløpOrdinær" Period="0" Year="0">530000</Rate>
+    <Rate Kind="FribeløpVeitransport" Period="0" Year="0">265000</Rate>
+    <Rate Kind="FribeløpOrdinær" Period="0" Year="2014">450000</Rate>
+    <Rate Kind="FribeløpVeitransport" Period="0" Year="2014">225000</Rate>
+    <Rate Kind="FribeløpOrdinær" Period="0" Year="2015">500000</Rate>
+    <Rate Kind="FribeløpVeitransport" Period="0" Year="2014">250000</Rate>
   </RateGroup>
-  <RateGroup Name="Feriepenger">
-    <!-- Brukes i Årsavslutning -->
-    <Rate Year="0000" Kind="Ordinær">10.2</Rate>
-    <Rate Year="0000" Kind="Over60">12.5</Rate>
+  <!-- Brukes i Årsavslutning -->
+  <RateGroup Name="Feriepenger" Periodic="False">
+    <Rate Kind="Ordinær" Period="0" Year="0">10.2</Rate>
+    <Rate Kind="Over60" Period="0" Year="0">12.5</Rate>
   </RateGroup>
-  <RateGroup Name="Skatt">
-    <!-- Brukes i Årsavslutning og Skatt -->
-    <Rate Year="0000">28</Rate>
-    <Rate Year="2014">27</Rate>
-    <Rate Year="2016">25</Rate>
-    <Rate Year="2017">24</Rate>
-    <Rate Year="2018">23</Rate>
-    <Rate Year="2019">22</Rate>
+  <!-- Brukes i Årsavslutning og Skatt -->
+  <RateGroup Name="Skatt" Periodic="False">
+    <Rate Period="0" Year="0">28</Rate>
+    <Rate Period="0" Year="2014">27</Rate>
+    <Rate Period="0" Year="2016">25</Rate>
+    <Rate Period="0" Year="2017">24</Rate>
+    <Rate Period="0" Year="2018">23</Rate>
+    <Rate Period="0" Year="2019">22</Rate>
+    <Rate Period="0" Year="2020">22</Rate>
   </RateGroup>
-  <RateGroup Name="UtsattSkatt">
-    <!-- Brukes i Årsavslutning og Skatt -->
-    <Rate Year="0000">28</Rate>
-    <Rate Year="2013">27</Rate>
-    <Rate Year="2015">25</Rate>
-    <Rate Year="2016">24</Rate>
-    <Rate Year="2017">23</Rate>
-    <Rate Year="2018">22</Rate>
+  <!-- Brukes i Årsavslutning og Skatt -->
+  <RateGroup Name="UtsattSkatt" Periodic="False">
+    <Rate Period="0" Year="0">28</Rate>
+    <Rate Period="0" Year="2013">27</Rate>
+    <Rate Period="0" Year="2015">25</Rate>
+    <Rate Period="0" Year="2016">24</Rate>
+    <Rate Period="0" Year="2017">23</Rate>
+    <Rate Period="0" Year="2018">22</Rate>
+    <Rate Period="0" Year="2019">22</Rate>
+    <Rate Period="0" Year="2020">22</Rate>
   </RateGroup>
-  <RateGroup Name="NormRente">
-    <!-- Kraftverk. Friinntekt. Brukes i Skatt.1153.sid2.F5 -->
-    <Rate Year="2014">1.3</Rate>
-    <Rate Year="2015">0.7</Rate>
-    <Rate Year="2016">0.5</Rate>
-    <Rate Year="2017">0.4</Rate>
-    <Rate Year="2018">0.7</Rate>
-    <Rate Year="2019">1.2</Rate>
-	<Rate Year="2020">0.3</Rate>
+  <!-- Kraftverk. Friinntekt. Brukes i Skatt.1153.sid2.F5 -->
+  <RateGroup Name="NormRente" Periodic="False">
+    <Rate Period="0" Year="2014">1.3</Rate>
+    <Rate Period="0" Year="2015">0.7</Rate>
+    <Rate Period="0" Year="2016">0.5</Rate>
+    <Rate Period="0" Year="2017">0.4</Rate>
+    <Rate Period="0" Year="2018">0.7</Rate>
+    <Rate Period="0" Year="2019">1.2</Rate>
+    <Rate Period="0" Year="2020">0.3</Rate>
   </RateGroup>
-  <RateGroup Name="Rederi_normrente_tillegg_hoy_egenkapital">
-    <!-- Rederi. Brukes i Skatt.1197.sid1.F99 -->
-    <Rate Year="2014">2.0</Rate>
-    <Rate Year="2015">1.3</Rate>
-    <Rate Year="2016">1.1</Rate>
-    <Rate Year="2017">1.3</Rate>
-    <Rate Year="2018">1.7</Rate>
-    <Rate Year="2019">1.7</Rate>
-	<Rate Year="2020">0.9</Rate>
+  <!-- Rederi. Brukes i Skatt.1197.sid1.F99 -->
+  <RateGroup Name="Rederi_normrente_tillegg_hoy_egenkapital" Periodic="False">
+    <Rate Period="0" Year="2014">2.0</Rate>
+    <Rate Period="0" Year="2015">1.3</Rate>
+    <Rate Period="0" Year="2016">1.1</Rate>
+    <Rate Period="0" Year="2017">1.3</Rate>
+    <Rate Period="0" Year="2018">1.7</Rate>
+    <Rate Period="0" Year="2019">1.7</Rate>
+    <Rate Period="0" Year="2020">0.9</Rate>
   </RateGroup>
-  <RateGroup Name="DiskonteringsRente">
-    <!-- Kraftverk. Brukes i Skatt.1153.sid4.F88 -->
-    <!-- Kraftverk. Brukes i Skatt.1161.sid1.F82 -->
-    <Rate Year="2009">4.7</Rate>
-    <Rate Year="2010">3.3</Rate>
-    <Rate Year="2011">4.5</Rate>
-    <Rate Year="2017">4.5</Rate>
-    <Rate Year="2018">4.5</Rate>
-    <Rate Year="2019">4.5</Rate>
+  <!-- Kraftverk. Brukes i Skatt.1153.sid4.F88
+Kraftverk. Brukes i Skatt.1161.sid1.F82 -->
+  <RateGroup Name="DiskonteringsRente" Periodic="False">
+    <Rate Period="0" Year="2009">4.7</Rate>
+    <Rate Period="0" Year="2010">3.3</Rate>
+    <Rate Period="0" Year="2011">4.5</Rate>
+    <Rate Period="0" Year="2017">4.5</Rate>
+    <Rate Period="0" Year="2018">4.5</Rate>
+    <Rate Period="0" Year="2019">4.5</Rate>
   </RateGroup>
-  <RateGroup Name="Konsumprisindeks">
-    <!-- Kraftverk. Brukes i Skatt.1161.sid1.F143 -->
-    <Rate Year="2015">1.021</Rate>
-    <Rate Year="2016">1.036</Rate>
-    <Rate Year="2017">1.0183</Rate>
-    <Rate Year="2018">1.0275</Rate>
-    <Rate Year="2019">1.0221</Rate>
-	<Rate Year="2020">1.0126</Rate>
+  <!-- Kraftverk. Brukes i Skatt.1161.sid1.F143 -->
+  <RateGroup Name="Konsumprisindeks" Periodic="False">
+    <Rate Period="0" Year="2015">1.021</Rate>
+    <Rate Period="0" Year="2016">1.036</Rate>
+    <Rate Period="0" Year="2017">1.0183</Rate>
+    <Rate Period="0" Year="2018">1.0275</Rate>
+    <Rate Period="0" Year="2019">1.0221</Rate>
+    <Rate Period="0" Year="2020">1.0126</Rate>
   </RateGroup>
-  <RateGroup Name="NåverdiRente">
-    <!-- Kraftverk. Brukes i Skatt.1161.sid1.F82, kun i 2016.3, endret til DiskonteringsRente  -->
-    <Rate Year="2009">4.7</Rate>
-    <Rate Year="2010">3.3</Rate>
-    <Rate Year="2015">4.5</Rate>
-    <Rate Year="2017">0</Rate>
-    <Rate Year="2018">0</Rate>
+  <!-- Kraftverk. Brukes i Skatt.1161.sid1.F82, kun i 2016.3, endret til DiskonteringsRente -->
+  <RateGroup Name="NåverdiRente" Periodic="False">
+    <Rate Period="0" Year="2009">4.7</Rate>
+    <Rate Period="0" Year="2010">3.3</Rate>
+    <Rate Period="0" Year="2015">4.5</Rate>
+    <Rate Period="0" Year="2017">0</Rate>
+    <Rate Period="0" Year="2018">0</Rate>
   </RateGroup>
-  <RateGroup Name="Kalkulasjonsfaktor">
-    <!--Brukes i Skatt.1098S.sid1.F24 -->
-    <Rate Year="2015">0.066</Rate>
-    <Rate Year="2016">0.063</Rate>
-    <Rate Year="2017">0.066</Rate>
-    <Rate Year="2018">0.069</Rate>
-    <Rate Year="2019">0.065</Rate>
-	<Rate Year="2020">0.058</Rate>
+  <!-- Brukes i Skatt.1098S.sid1.F24 -->
+  <RateGroup Name="Kalkulasjonsfaktor" Periodic="False">
+    <Rate Period="0" Year="2015">0.066</Rate>
+    <Rate Period="0" Year="2016">0.063</Rate>
+    <Rate Period="0" Year="2017">0.066</Rate>
+    <Rate Period="0" Year="2018">0.069</Rate>
+    <Rate Period="0" Year="2019">0.065</Rate>
+    <Rate Period="0" Year="2020">0.058</Rate>
   </RateGroup>
-  <RateGroup Name="Indeks">
-    <!-- Kraftverk. Brukes i Skatt.1153.sid3.F24 -->
-    <Rate Year="2016">103.6</Rate>
-    <Rate Year="2017">105.5</Rate>
-    <Rate Year="2018">108.4</Rate>
-    <Rate Year="2019">110.8</Rate>
-    <Rate Year="2020">112.2</Rate>
+  <!-- Kraftverk. Brukes i Skatt.1153.sid3.F24 -->
+  <RateGroup Name="Indeks" Periodic="False">
+    <Rate Period="0" Year="2016">103.6</Rate>
+    <Rate Period="0" Year="2017">105.5</Rate>
+    <Rate Period="0" Year="2018">108.4</Rate>
+    <Rate Period="0" Year="2019">110.8</Rate>
+    <Rate Period="0" Year="2020">112.2</Rate>
   </RateGroup>
-  <RateGroup Name="MaxReiseutgift">
-    <!-- Brukes i 1030, Max reisefradrag -->
-    <Rate Year="2016">70500</Rate>
-    <Rate Year="2017">75000</Rate>
-    <Rate Year="2018">74650</Rate>
-    <Rate Year="2019">74300</Rate>
-	<Rate Year="2020">73900</Rate>
+  <!-- Brukes i 1030, Max reisefradrag -->
+  <RateGroup Name="MaxReiseutgift" Periodic="False">
+    <Rate Period="0" Year="2016">70500</Rate>
+    <Rate Period="0" Year="2017">75000</Rate>
+    <Rate Period="0" Year="2018">74650</Rate>
+    <Rate Period="0" Year="2019">74300</Rate>
+    <Rate Period="0" Year="2020">73900</Rate>
   </RateGroup>
-  <RateGroup Name="VerdiUttattFisk">
-    <!-- Brukes i 1213, post 112, uttatt fisk -->
-    <Rate Year="2015">1300</Rate>
-    <Rate Year="2016">1500</Rate>
-    <Rate Year="2019">1600</Rate>
-	<Rate Year="2020">1600</Rate>
+  <!-- Brukes i 1213, post 112, uttatt fisk -->
+  <RateGroup Name="VerdiUttattFisk" Periodic="False">
+    <Rate Period="0" Year="2015">1300</Rate>
+    <Rate Period="0" Year="2016">1500</Rate>
+    <Rate Period="0" Year="2019">1600</Rate>
+    <Rate Period="0" Year="2020">1600</Rate>
   </RateGroup>
-  <RateGroup Name="CostFOULow">
-    <!-- Disponering FOU do.sid11 -->
-    <Rate Year="2017">18</Rate>
-	<Rate Year="2020">19</Rate>
+  <!-- Disponering FOU do.sid11 -->
+  <RateGroup Name="CostFOULow" Periodic="False">
+    <Rate Period="0" Year="2017">18</Rate>
+    <Rate Period="0" Year="2020">19</Rate>
   </RateGroup>
-  <RateGroup Name="CostFOUHigh">
-    <!-- Disponering FOU do.sid11 -->
-    <Rate Year="2017">20</Rate>
-	<Rate Year="2020">0</Rate>
+  <!-- Disponering FOU do.sid11 -->
+  <RateGroup Name="CostFOUHigh" Periodic="False">
+    <Rate Period="0" Year="2017">20</Rate>
+    <Rate Period="0" Year="2020">0</Rate>
   </RateGroup>
-  <RateGroup Name="Rettsgebyr">
-    <!-- Dokument -->
-    <Rate Year="2015">860</Rate>
-    <Rate Year="2016">1025</Rate>
-    <Rate Year="2017">1049</Rate>
-    <Rate Year="2018">1130</Rate>
-    <Rate Year="2019">1150</Rate>
-	<Rate Year="2020">1172</Rate>
+  <!-- Dokument -->
+  <RateGroup Name="Rettsgebyr" Periodic="False">
+    <Rate Period="0" Year="2015">860</Rate>
+    <Rate Period="0" Year="2016">1025</Rate>
+    <Rate Period="0" Year="2017">1049</Rate>
+    <Rate Period="0" Year="2018">1130</Rate>
+    <Rate Period="0" Year="2019">1150</Rate>
+    <Rate Period="0" Year="2020">1172</Rate>
+    <Rate Period="0" Year="2021">1199</Rate>
   </RateGroup>
-  <RateGroup Name="SatsAlminneligInntektFinans">
-    <!-- SatsAlminneligInntektFinans Skatt -->
-    <Rate Year="2017">25</Rate>
+  <!-- SatsAlminneligInntektFinans Skatt -->
+  <RateGroup Name="SatsAlminneligInntektFinans" Periodic="False">
+    <Rate Period="0" Year="2017">25</Rate>
   </RateGroup>
-  <RateGroup Name="SatsAlminneligInntekt">
-    <!-- SatsAlminneligInntekt Skatt -->
-    <Rate Year="2014">27</Rate>
-    <Rate Year="2016">25</Rate>
-    <Rate Year="2017">24</Rate>
-    <Rate Year="2018">23</Rate>
-    <Rate Year="2019">22</Rate>
+  <!-- SatsAlminneligInntekt Skatt -->
+  <RateGroup Name="SatsAlminneligInntekt" Periodic="False">
+    <Rate Period="0" Year="2014">27</Rate>
+    <Rate Period="0" Year="2016">25</Rate>
+    <Rate Period="0" Year="2017">24</Rate>
+    <Rate Period="0" Year="2018">23</Rate>
+    <Rate Period="0" Year="2019">22</Rate>
   </RateGroup>
-  <RateGroup Name="SatsAlminneligInntektSokkel">
-    <!-- SatsAlminneligInntektSokkel RF-1323 Skatt -->
-    <Rate Year="2017">54</Rate>
-    <Rate Year="2018">55</Rate>
-    <Rate Year="2019">56</Rate>
+  <!-- SatsAlminneligInntektSokkel RF-1323 Skatt -->
+  <RateGroup Name="SatsAlminneligInntektSokkel" Periodic="False">
+    <Rate Period="0" Year="2017">54</Rate>
+    <Rate Period="0" Year="2018">55</Rate>
+    <Rate Period="0" Year="2019">56</Rate>
   </RateGroup>
-  <RateGroup Name="Skattesats_Svalbard">
-    <!-- Skattesats_Svalbard Skatt -->
-    <Rate Year="2014">16</Rate>
+  <!-- Skattesats_Svalbard Skatt -->
+  <RateGroup Name="Skattesats_Svalbard" Periodic="False">
+    <Rate Period="0" Year="2014">16</Rate>
   </RateGroup>
-  <RateGroup Name="Grunnrente_framforbar">
-    <!-- Skatt - Fremførbar grunnrente, post 154 i RF-1153 -->
-    <Rate Year="2017">1.9</Rate>
-    <Rate Year="2018">1.8</Rate>
-	<Rate Year="2019">2.1</Rate>
-	<Rate Year="2020">2.5</Rate>
+  <!-- Skatt - Fremførbar grunnrente, post 154 i RF-1153 -->
+  <RateGroup Name="Grunnrente_framforbar" Periodic="False">
+    <Rate Period="0" Year="2017">1.9</Rate>
+    <Rate Period="0" Year="2018">1.8</Rate>
+    <Rate Period="0" Year="2019">2.1</Rate>
+    <Rate Period="0" Year="2020">2.5</Rate>
+  </RateGroup>
+  <!-- Inkassosats Dokument -->
+  <RateGroup Name="Inkassosats" Periodic="False">
+    <Rate Period="0" Year="2021">700</Rate>
+  </RateGroup>
+  <!-- SalaerSats Dokument -->
+  <RateGroup Name="SalaerSats" Periodic="False">
+    <Rate Period="0" Year="2021">1085</Rate>
+  </RateGroup>
+  <!-- RegAS Dokument -->
+  <RateGroup Name="RegAS" Periodic="False">
+    <Rate Period="0" Year="2021">6797</Rate>
+  </RateGroup>
+  <!-- eRegAS Dokument -->
+  <RateGroup Name="eRegAS" Periodic="False">
+    <Rate Period="0" Year="2021">5570</Rate>
+  </RateGroup>
+  <!-- TinglysingsgebyrFastEiendom Dokument -->
+  <RateGroup Name="TinglysingsgebyrFastEiendom" Periodic="False">
+    <Rate Period="0" Year="2021">585</Rate>
+  </RateGroup>
+  <!-- TinglysingsgebyrBorettslagsandel Dokument -->
+  <RateGroup Name="TinglysingsgebyrBorettslagsandel" Periodic="False">
+    <Rate Period="0" Year="2021">480</Rate>
   </RateGroup>
 </Rates>
