@@ -21,7 +21,7 @@
     <Rate Year="2018">1.1</Rate>
 	<Rate Year="2019">1.7</Rate>
 	<Rate Year="2020">0.8</Rate>
-	<Rate Year="2021">0</Rate>
+	<Rate Year="2021">0.6</Rate>
   </RateGroup>
   <RateGroup Name="SkjermingsRenteSkatt">
     <!-- SkjermingsRenteSkatt brukes i Skatt, kunngjøres i starten av Januar -->
@@ -32,7 +32,7 @@
     <Rate Year="2018">0.8</Rate>
 	<Rate Year="2019">1.3</Rate>
 	<Rate Year="2020">0.6</Rate>
-	<Rate Year="2021">0</Rate>
+	<Rate Year="2021">0.5</Rate>
   </RateGroup>
   <RateGroup Name="Merverdiavgift">
     <!-- Brukes i Årsavslutning -->
@@ -125,7 +125,7 @@
     <Rate Year="2018">1.0275</Rate>
     <Rate Year="2019">1.0221</Rate>
 	<Rate Year="2020">1.0126</Rate>
-	<Rate Year="2021">1.0000</Rate>
+	<Rate Year="2021">1.0348</Rate>
   </RateGroup>
   <RateGroup Name="NåverdiRente">
     <!-- Kraftverk. Brukes i Skatt.1161.sid1.F82, kun i 2016.3, endret til DiskonteringsRente  -->
@@ -143,7 +143,7 @@
     <Rate Year="2018">0.069</Rate>
     <Rate Year="2019">0.065</Rate>
 	<Rate Year="2020">0.058</Rate>
-	<Rate Year="2021">0</Rate>
+	<Rate Year="2021">0.064</Rate>
   </RateGroup>
   <RateGroup Name="Indeks">
     <!-- Kraftverk. Brukes i Skatt.1153.sid3.F24 -->
@@ -152,7 +152,7 @@
     <Rate Year="2018">108.4</Rate>
     <Rate Year="2019">110.8</Rate>
     <Rate Year="2020">112.2</Rate>
-	<Rate Year="2021">0</Rate>
+	<Rate Year="2021">116.1</Rate>
   </RateGroup>
   <RateGroup Name="MaxReiseutgift">
     <!-- Brukes i 1030, Max reisefradrag -->
@@ -162,6 +162,7 @@
     <Rate Year="2019">74300</Rate>
 	<Rate Year="2020">73900</Rate>
 	<Rate Year="2021">73100</Rate>
+	<Rate Year="2022">83000</Rate>
   </RateGroup>
   <RateGroup Name="VerdiUttattFisk">
     <!-- Brukes i 1213, post 112, uttatt fisk -->
@@ -169,6 +170,7 @@
     <Rate Year="2016">1500</Rate>
     <Rate Year="2019">1600</Rate>
 	<Rate Year="2020">1600</Rate>
+	<Rate Year="2021">1600</Rate>
   </RateGroup>
   <RateGroup Name="CostFOULow">
     <!-- Disponering FOU do.sid11 -->
@@ -189,6 +191,7 @@
     <Rate Year="2019">1150</Rate>
     <Rate Year="2020">1172</Rate>
     <Rate Year="2021">1199</Rate>
+    <Rate Year="2022">1223</Rate>
   </RateGroup>
   <RateGroup Name="SatsAlminneligInntektFinans">
     <!-- SatsAlminneligInntektFinans Skatt -->
@@ -227,6 +230,7 @@
   <RateGroup Name="SalaerSats">
     <!-- SalaerSats Dokument -->
     <Rate Year="2021">1085</Rate>
+    <Rate Year="2022">1107</Rate>
   </RateGroup>
   <RateGroup Name="RegAS">
     <!-- RegAS Dokument -->
