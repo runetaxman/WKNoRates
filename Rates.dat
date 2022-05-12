@@ -119,13 +119,13 @@
   </RateGroup>
   <RateGroup Name="Konsumprisindeks">
     <!-- Kraftverk. Brukes i Skatt.1161.sid1.F143 -->
-    <Rate Year="2015">1.021</Rate>
-    <Rate Year="2016">1.036</Rate>
-    <Rate Year="2017">1.0183</Rate>
-    <Rate Year="2018">1.0275</Rate>
-    <Rate Year="2019">1.0221</Rate>
-	<Rate Year="2020">1.0126</Rate>
-	<Rate Year="2021">1.0348</Rate>
+    <Rate Year="2015">1.0233</Rate>
+    <Rate Year="2016">1.0347</Rate>
+    <Rate Year="2017">1.0163</Rate>
+    <Rate Year="2018">1.0349</Rate>
+    <Rate Year="2019">1.0137</Rate>
+    <Rate Year="2020">1.0143</Rate>
+    <Rate Year="2021">1.0531</Rate>
   </RateGroup>
   <RateGroup Name="NåverdiRente">
     <!-- Kraftverk. Brukes i Skatt.1161.sid1.F82, kun i 2016.3, endret til DiskonteringsRente  -->
